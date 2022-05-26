@@ -1,6 +1,26 @@
 import { faker } from '@faker-js/faker';
 
 export const CODEGEN_MAPPINGS: { [p: string]: Function } = {
-  name: faker.name.findName,
-  color: faker.commerce.color
-}
+  full_name: faker.name.findName,
+  first_name: faker.name.firstName,
+  last_name: faker.name.lastName,
+  email: faker.internet.email,
+  phone: faker.phone.phoneNumber,
+  city: faker.address.city,
+  avatar: faker.image.avatar,
+  cats: faker.image.cats,
+  street_name: faker.address.streetName,
+  street_address: faker.address.streetAddress,
+  secondary_address: faker.address.secondaryAddress,
+  country: faker.address.country,
+  state: faker.address.state,
+  zipcode: faker.address.zipCode,
+  latitude: faker.address.latitude,
+  longitude: faker.address.longitude,
+  color: faker.commerce.color,
+  company: faker.company.companyName,
+  lorem: faker.lorem.sentence,
+  random_alpha: faker.random.alphaNumeric,
+  single_word: faker.random.word,
+  random_words: faker.random.words,
+};
